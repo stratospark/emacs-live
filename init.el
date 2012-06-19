@@ -117,7 +117,8 @@
                          (concat live-dir "colour-pack")
                          (concat live-dir "clojure-pack")
                          (concat live-dir "lang-pack")
-                         (concat live-dir "power-pack"))))
+                         (concat live-dir "power-pack")
+                         (concat live-dir "user-pack"))))
 
 ;; Helper fn for loading live packs
 

@@ -6,6 +6,9 @@
 ;; Load bindings config
 (live-load-config-file "bindings.el")
 
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+
 ;; Sleeker UI
 (fringe-mode 0)
 (menu-bar-mode 0)
@@ -20,6 +23,8 @@
 (global-set-key (kbd "M-o") 'other-window)
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
+
+(global-set-key (kbd "C-x g") 'magit-status)
 
 (when (fboundp 'winner-mode)
   (winner-mode 1))
